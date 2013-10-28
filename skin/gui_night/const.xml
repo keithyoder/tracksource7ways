@@ -1,0 +1,97 @@
+<gui>
+
+  <const formBgColor="#12003D"
+         formModalColor="#848585"
+         formTextColor="#bfbfbf"
+         
+         textButtonBgColor="#C90000"
+		 textButtonBgColorPressed="#E40003"
+         
+		 bgColor1="#007400"
+         bgColorPressed1="#008D00"
+         bgColor2="#C70000"
+         bgColorPressed2="#E40003"
+         bgColor3="#006980"
+         bgColorPressed3="#008798"
+         bgColor4="#B92E0D"
+         bgColorPressed4="#C33E15"
+         bgColor5="#73007C"
+         bgColorPressed5="#8E0095"
+         bgColor6="#2900A4"
+         bgColorPressed6="#3104B6"
+         bgColor7="#930024"
+         bgColor8="#DC5800"
+         bgColorPressed8="#E66802"
+         bgColor9="#005F9A"
+         bgColorPressed9="#0079AA"
+         bgColor10="#381A92"
+         bgColorPressed10="#4B25A6"
+         bgColor11="#8600D3"
+         bgColorPressed11="#9603E6"
+         bgColor12="#2C7E00"
+         bgColorPressed12="#4B9500"
+         bgColor13="#0083B4"
+         bgColorPressed13="#0088BE"
+         bgColor14="#E66802"
+         bgColorPressed14="#DC5800"
+         bgColor15="#007100"
+         bgColorPressed15="#008D00"
+         bgColor16="#C90042"
+         bgColorPressed16="#E0004B"
+         bgColor17="#15BC70"
+         bgColorPressed17="#38CF8A"
+         bgColor18="#7DC728"
+         
+         controlBgColor="#bfbfbf"
+         controlDisabledBgColor="#999A9A"
+         
+         buttonTextColor="#bfbfbf"
+         buttonDisabledTextColor="#848585"
+         
+         kbdBtnTextColor="black"
+         kbdSpecBtnTextColor="#bfbfbf"
+         kbdBtnDisabledTextColor="#ACADAD"
+         
+         checkBoxTextColor="#bfbfbf"
+         
+         menuCheckBoxOffBgColor="#C0C0C0"
+         menuCheckBoxOffTextColor="#51544F"
+         menuCheckBoxOffPressedBgColor="#CCCCCC"
+         menuCheckBoxOffPressedTextColor="#6E706C"
+         
+         editTextColor="black"
+         editDisabledTextColor="#6F6F6F"
+         
+         hintActiveColor="#ACADAD"
+         hintInactiveColor="#4D4D4D"
+         
+         comboBoxTextColor="black"
+         
+         listTextColor="black"
+         listSelectedTextColor="#bfbfbf"
+         listTextColor2="#454545"
+         listTextColor3="#2900A4"
+         listSelectedTextColor3="#E0004B"
+         listSelectedBgColor="#7DAF09"
+         
+         popupBgColor="#C0C0C0"
+         popupTextColor1="black"
+         popupTextColor2="red"
+         
+         infoButtonBgColor="black"
+         infoGroupBgColor="#626452"
+         infoGroupHeaderTextColor="#bfbfbf"
+         infoWindowAdrTextColor="#848585"
+         
+         speedCamTextColor="black"
+         
+         satellitesTextColor="#bfbfbf"
+         satellitesGPSTextBgColor=""
+         satellitesOtherTextBgColor=""
+         satellitesBorderColor="#bfbfbf"
+         satellitesEmptyColor="#bfbfbf"
+         satellitesValidColor="#80E600"
+         satellitesInvalidColor="#D30013"
+  />
+
+</gui>

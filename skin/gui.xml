@@ -1,0 +1,1106 @@
+﻿<gui version="92">
+
+	<declaration>
+
+		<include file="$time/const.xml"/>
+				
+		
+		
+		<label fontColor="formTextColor" autoSize="1"/>
+
+		
+		
+		<button fontColor="buttonTextColor" fontColorDisabled="buttonDisabledTextColor"/>
+
+		<button id="TextButton" leftMargin="4pd" rightMargin="4pd"
+				bgColor="textButtonBgColor" bgColorPressed="textButtonBgColorPressed"
+		/>
+
+		<button id="PopupMenuButton" autoSize="enlarge" fontColor="popupTextColor1"/>
+		
+		<button id="PicMenuButton" fontSize="7" wordWrap="1"
+				textPosition="left;bottom" picPosition="right;top" leftMargin="5pd" bottomMargin="5pd" height="70pd"
+				bgPicsDisabled="light_gray_pix;light_gray_pix;light_gray_pix;light_gray_pix;;light_gray_pix;light_gray_pix;light_gray_pix;light_gray_pix"/>
+		<button id="PicMenuSmallButton" sourceId="PicMenuButton" width="70pd"/>
+		<button id="PicMenuLargeButton" sourceId="PicMenuButton" width="144pd"/>
+
+		<button id="QuickMenuButton" width="70pd" height="70pd" leftMargin="5pd" bottomMargin="5pd"
+				textPosition="left;bottom" picPosition="right;top" fontSize="7" wordWrap="1"/>
+		<button id="QuickMenuLargeButton" sourceId="QuickMenuButton" width="144pd"/>
+
+		<button id="ListItemLargeButton"
+				textPosition="left;bottom" picPosition="right;top" leftMargin="7pd" bottomMargin="4pd"
+				height="45pd" width="90pd" top="50%" fontSize="8"/>
+
+		<button id="GreenButton" bgColor="bgColor12" bgColorPressed="bgColorPressed12"
+				bgPics="white_frame;white_frame;white_frame;white_frame;;white_frame;white_frame;white_frame;white_frame"
+				bgPicsPressed="white_frame;white_frame;white_frame;white_frame;;white_frame;white_frame;white_frame;white_frame"/>
+		<button id="GreenTextButton" sourceId="GreenButton" height="29pd"
+				picPosition="right;top" textPosition="left;bottom" fontSize="7" leftMargin="3pd" wordWrap="1"/>
+
+		<button id="TitleButton" top="14pd" height="18pd" autoSize="text" fontColor="formTextColor" textPosition="left;center"/>
+		<button id="FormTitleButton" sourceId="TitleButton" left="44pd" right="44pd"/>
+		<button id="DialogTitleButton" sourceId="TitleButton" left="35pd" right="0"/>
+		
+		<button id="OKButton" picNormal="ok" picPressed="ok_p" right="10pd" top="10pd" command="ok"/>
+		<button id="BackButton" picNormal="back" picPressed="back_p" command="goBack" top="10pd" left="10pd"/>
+		<button id="ShowMapButton" picNormal="map" picPressed="map_p" command="showMainMap" top="10pd" right="10pd"/>
+		<button id="ZoomButton" bgPics=";;;;zoom_pix;;;;"  bgPicsPressed=";;;;zoom_pix_p;;;;" bgPicsDisabled=";;;;zoom_pix_d;;;;"
+				height="27pd" width="50pd" tags="!auto; !entireRoute"/>
+		<button id="PitchButton" bgPics=";;;;pitch_pix;;;;" bgPicsPressed=";;;;pitch_pix_p;;;;" bgPicsDisabled=";;;;pitch_pix_d;;;;"
+				height="27pd" width="50pd" tags="!auto; 3D"/>
+
+
+		<checkBox fontColor="checkBoxTextColor" fontColorChecked="checkBoxTextColor"/>
+		
+		<checkBox id="UsualCheckBox" autoSize="enlarge"
+				picUnchecked="cb_off" picUncheckedPressed="cb_off_p"
+				picChecked="cb_on" picCheckedPressed="cb_on_p"
+				bgColorPressed="bgColorPressed12" bgColorCheckedPressed="bgColorPressed12"
+		/>
+
+		<checkBox id="QuickMenuToggle"
+				textPosition="left;bottom" picPosition="right;top" leftMargin="5pd" bottomMargin="5pd" width="70pd" height="70pd"
+				fontSize="7" wordWrap="1" fontColor="menuCheckBoxOffTextColor" fontColorPressed="menuCheckBoxOffPressedTextColor"
+				bgColor="menuCheckBoxOffBgColor" bgColorPressed="menuCheckBoxOffPressedBgColor"
+		/>
+
+		<checkBox id="MenuToggle" sourceId="QuickMenuToggle"
+				bgColorChecked="bgColor6" bgColorCheckedPressed="bgColorPressed6"
+				picChecked="settings_on" picUnchecked="settings_off"/>
+
+		<checkBox id="MenuLargeToggle" sourceId="MenuToggle" width="144pd"/>
+
+
+
+		<group id="MenuGroup" left="0" right="0" top="40pd" bottom="35pd"/>
+		<group id="ListItemGroup" bgPics="list_01;list_02;list_03;list_04;list_05;list_06;list_07;list_08;list_09" height="47pd"/>
+		<group id="ListSelectedItemGroup" bgPics="select_list_01;select_list_02;select_list_03;select_list_04;select_list_05;select_list_06;select_list_07;select_list_08;select_list_09" height="47pd"/>
+		<group id="ComboBoxGroup" bgColor="bgColor7" width="144pd" height="70pd"/>
+			
+
+
+		<dialog id="MessageBox" bgColor="bgColor2" left="50%" top="50%" leftMargin="5pd" rightMargin="5pd" topMargin="5pd" bottomMargin="5pd" tags="ignoreModes">
+			<button picNormal="info_attention"/>
+			<label id="Text" fontSize="10" leftMargin="50pd" topMargin="15pd" rightMargin="10pd" bottomMargin="20pd" wordWrap="1"/>
+		</dialog>
+
+		<dialog id="FormDialog" leftMargin="10pd" rightMargin="10pd" bottomMargin="10pd" top="0" bottom="0" left="0" right="0" bgColor="formBgColor">
+			<button sourceId="BackButton" left="0"/>
+		</dialog>
+
+		<dialog id="OKCancelDialog" sourceId="FormDialog">
+			<button id="OKButton" sourceId="OKButton" right="0"/>
+		</dialog>
+
+		<dialog id="ListDialog" sourceId="FormDialog">
+			<listBox id="List" left="0" right="0" top="44pd" bottom="0"/>
+		</dialog>
+
+
+
+		<comboBox fontColor="comboBoxTextColor" bgColor="controlBgColor" bgColorDisabled="controlDisabledBgColor">
+			<button picNormal="cb_button" picPressed="cb_button_p"/>
+		</comboBox>
+
+		<comboBox id="MenuComboBox" width="139pd" height="50pd" bottom="0" right="0" leftMargin="5pd" fontSize="8"/>
+
+		
+		
+		<scrollBar width="8pd" minThumbSize="40pd">
+			<thumb bgPics=";scroll;;;scroll_01;;;scroll;"/>
+		</scrollBar>
+
+		
+		
+		<slider thumbWidth="40pd">
+			<track bgColor="controlBgColor" height="10pd"/>
+			<thumb picNormal="slider_thumb"/>
+		</slider>
+
+
+
+		<edit leftMargin="3pd" bgColor="controlBgColor" bgColorDisabled="controlDisabledBgColor" fontColor="editTextColor" fontColorDisabled="editDisabledTextColor">
+			<button right="2pd" picNormal="clearedit" picPressed="clearedit_p"/>
+			<hint colorActive="hintActiveColor" colorInactive="hintInactiveColor" fontSize="8"/>
+		</edit>
+
+
+
+		<listBox bgColor="controlBgColor" bgColorSelected="listSelectedBgColor"
+				leftMargin="1pd" topMargin="1pd" rightMargin="1pd" bottomMargin="1pd"
+				fontColor="listTextColor" fontColorSelected="listSelectedTextColor" fontSize="14"/>
+
+
+		
+		<listContainer id="LabelList">
+			<item sourceId="ListItemGroup">
+				<label id="Label" right="2pd" left="2pd" fontColor="listTextColor"/>
+			</item>
+			<selectedItem sourceId="ListSelectedItemGroup">
+				<label id="Label" right="2pd" left="2pd" fontColor="listSelectedTextColor"/>
+			</selectedItem>
+		</listContainer>
+
+		<listContainer id="POIList">
+			<item sourceId="ListItemGroup" leftMargin="0">
+				<button id="Picture" top="50%" width="28pd" height="28pd"/>
+				<label id="Label" left="30pd" right="5pd"/>
+			</item>
+			<selectedItem sourceId="ListSelectedItemGroup" leftMargin="0">
+				<button id="Picture" top="50%" width="28pd" height="28pd"/>
+				<label id="Label" left="30pd" right="5pd"/>
+			</selectedItem>
+		</listContainer>
+
+		<listContainer id="CheckBoxList">
+			<item height="47pd" bgPics="blue_select_list_01;blue_select_list_02;blue_select_list_03;blue_select_list_04;blue_select_list_05;blue_select_list_06;blue_select_list_07;blue_select_list_08;blue_select_list_09">
+				<checkBox id="CheckBox" sourceId="UsualCheckBox" left="0" right="0"/>
+			</item>
+		</listContainer>
+
+		
+		
+		<menu margin="4pd" left="50%" top="50%"/>
+
+		<menu id="PopupMenu" left="" top="" orientation="vert" size="1" visible="0" bgColor="popupBgColor" leftMargin="10pd" topMargin="10pd" rightMargin="10pd" bottomMargin="10pd"/>
+		
+		<menu id="IndicatorMenu" sourceId="PopupMenu" tags="ignoreModes">
+			<button id="IndicatorMenuChoose" sourceId="PopupMenuButton" text="$ChooseIndicator" command="chooseIndicator"/>
+			<button id="IndicatorMenuReset" sourceId="PopupMenuButton" text="$ResetIndicator" command="resetIndicator"/>
+			<button id="IndicatorMenuRemove" sourceId="PopupMenuButton" text="$RemoveIndicator" command="removeIndicator"/>
+		</menu>
+
+		
+		
+		<mapWindow left="0" top="0" width="100%" height="100%" cursorPic="cursor_1; 200; cursor_2; 200; cursor_3; 200; cursor_4; 200; cursor_5; 200; cursor_6; 200; cursor_7; 200; cursor_8; 200; cursor_9;200; cursor_10; 200"/>
+
+		
+		
+		<form modalColor="formBgColor">
+			<hotkey key="Esc" command="goBack"/>
+			<hotkey key="Back" command="goBack"/>
+			<hotkey key="RWin+F6" command="goBack"/>
+			<hotkey key="Enter" command="ok"/>
+			<hotkey key="F1" command="showMainMenu"/>
+			<hotkey key="Menu" command="showMainMenu"/>
+			<hotkey key="F7" command="showSearchForm"/>
+			<hotkey key="Search" command="showSearchForm"/>
+		</form>
+
+		<form id="GUIForm" bgColor="formBgColor"/>
+
+		<form id="FormWithTime" sourceId="GUIForm">
+			<indicator sourceId="BaseTimeIndicator" right="6pd" bottom="5pd" width="40pd" height="20pd" fontBold="1" fontSize="9"/>
+		</form>
+
+		<form id="MapForm" modalColor="formModalColor">
+			<hotkey key="+" command="zoomIn"/>
+			<hotkey key="-" command="zoomOut"/>
+			<hotkey key="left" command="moveLeft"/>
+			<hotkey key="right" command="moveRight"/>
+			<hotkey key="up" command="moveUp"/>
+			<hotkey key="down" command="moveDown"/>
+
+			<mapWindow id="MapWindow"/>
+
+			<button id="InfoButton" left="0" bottom="0" width="100%" leftMargin="20pd"
+					bgColor="infoButtonBgColor" translucent="1" translucentPressed="1" text=" " tags="!entireRoute"/>
+			
+			<group id="InfoGroup" left="0" right="0" bottom="0" visible="0" tags="ignoreModes">
+				<header bgColor="infoGroupBgColor" leftMargin="2pd" topMargin="2pd" bottomMargin="2pd" rightMargin="2pd" autoSize="1" fontSize="10" fontColor="infoGroupHeaderTextColor"/>
+				<listBox id="List" leftMargin="3pd" left="0" top="0" right="0" fontSize="10" permanentItemButton="1">
+					<button top="50%" height="13pd" width="40pd" right="1pd" bgColor="bgColor8" bgColorPressed="bgColorPressed8" picNormal="info_small"/>
+				</listBox>
+			</group>
+
+			<button id="ZoomInButton" sourceId="ZoomButton" bottom="63pd" right="0" picNormal="zoom_in" command="zoomIn"/>
+			<button id="ZoomOutButton" sourceId="ZoomButton" bottom="34pd" right="0" picNormal="zoom_out" command="zoomOut"/>
+
+		</form>
+
+		
+		
+		<indicator fontColor="buttonTextColor"/>
+		<indicator id="GreyIndicator" bgColor="black" translucent="1" layout="hor" autoSize="enlarge"/>
+		<indicator id="GreenIndicator" bgColor="bgColor12"/>
+		<indicator id="BlueIndicator" bgColor="bgColor9"/>
+		<indicator id="BlueWhiteIndicator" bgColor="bgColor9" bgPics="white_frame;white_frame;white_frame;white_frame;;white_frame;white_frame;white_frame;white_frame"/>
+		
+		
+		<indicator id="MapObjectsCountIndicator" title="$ObjectsCount" sourceId="GreyIndicator" autoSize="enlarge"/>
+		<indicator id="RTreeIndicator" title="$RTree" sourceId="GreyIndicator" autoSize="enlarge"/>
+		<indicator id="DrawTimeIndicator" title="$DrawTime" sourceId="GreyIndicator" autoSize="enlarge"/>
+		<indicator id="CacheStatIndicator" title="$Cache" sourceId="GreyIndicator" fontSize="7" width="100%"/>
+		<indicator id="FontCacheIndicator" title="$FontCache" sourceId="GreyIndicator"/>
+		<indicator id="DisplayInfoIndicator" title="$Display" sourceId="GreyIndicator"/>
+		<indicator id="MapZoomLevelIndicator" title="$MapZoomLevel" sourceId="GreyIndicator"/>
+		<indicator id="SunIndicator" title="$Sun" sourceId="GreyIndicator"/>
+		<indicator id="TimeZoneIndicator" title="$TimeZone" sourceId="GreyIndicator"/>
+
+		
+		<indicator id="SpeedIndicator" title="$Speed" width="50pd" height="50pd" leftMargin="4pd" rightMargin="4pd" fontSize="20" fontBold="1" autoSize="text"/>
+		<indicator id="AzimuthIndicator" title="$Azimuth" sourceId="GreyIndicator"/>
+		<indicator id="GPSTimeIndicator" title="$Time" sourceId="GreyIndicator" width="60pd" height="28pd"/>
+		<indicator id="LongitudeIndicator" title="$Longitude" sourceId="GreyIndicator"/>
+		<indicator id="LatitudeIndicator" title="$Latitude" sourceId="GreyIndicator"/>
+		<indicator id="LocalTimeIndicator" title="$LocalTime" sourceId="GreyIndicator" width="60pd" height="28pd"/>
+
+		<indicator id="SatellitesIndicator" height="55pd" width="144pd" title="$Satellites" bgColor="bgColor5"
+				fontColor="satellitesTextColor" fontSize="6" columns="12" interval="1" numberLocation="bottom"
+				gpsTextBgColor="satellitesGPSTextBgColor" otherTextBgColor="satellitesOtherTextBgColor"
+				borderColor="satellitesBorderColor" emptyColor="satellitesEmptyColor" validColor="satellitesValidColor" invalidColor="satellitesInvalidColor"
+		/>
+
+		
+		<indicator id="MemoryIndicator" title="$Memory" sourceId="GreyIndicator"/>
+		<indicator id="BatteryIndicator" title="$Battery" picNormal="battery_0; battery_40; battery_70; battery_100"/>
+		<indicator id="DisplayResIndicator" title="$Display" sourceId="GreyIndicator"/>
+		<indicator id="SystemTimeIndicator" title="$SystemTime" sourceId="BlueIndicator" width="60pd" height="28pd"/>
+		<indicator id="BaseTimeIndicator" title="$BaseTime" autoSize="none"/>
+
+		<indicator id="FinishTimeIndicator" title="$FinishTime" bgColor="bgColor12" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame" width="60pd" height="28pd" autoSize="text" tags="route" fontBold="1"/>
+
+		<indicator id="FinishTimeLeftIndicator" title="$FinishTimeLeft" sourceId="GreenIndicator" width="60pd" height="28pd" tags="route"/>
+
+		<indicator id="FinishDistanceIndicator" title="$FinishDistance" bgColor="bgColor12" width="60pd" height="28pd" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame" fontBold="1" autoSize="text" tags="route"/>
+
+		<indicator id="GoalTimeIndicator" title="$GoalTime" sourceId="GreenIndicator" width="44pd" height="20pd" autoSize="text" tags="route"/>
+
+		<indicator id="GoalTimeLeftIndicator" title="$GoalTimeLeft" sourceId="GreenIndicator" width="60pd" height="28pd" tags="route"/>
+
+		<indicator id="GoalDistanceIndicator" title="$GoalDistance" bgColor="bgColor9" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame" width="60pd" height="28pd" tags="route"/>
+
+		<indicator id="TurnTimeIndicator" title="$TurnTime" sourceId="BlueIndicator" width="60pd" height="28pd" tags="route"/>
+
+		<indicator id="TurnDistanceIndicator" title="$TurnDistance" bgColor="bgColor9" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame" width="60pd" height="20pd" autoSize="text" tags="route" fontBold="1"/>
+
+		<indicator id="TurnSchemeIndicator" title="$TurnScheme" width="60pd" height="60pd" tags="route"
+				bgColor="bgColor9" bgPics="white_frame;white_frame;white_frame;white_frame;;white_frame;;;"
+				bgColorPressed="bgColorPressed9" bgPicsPressed="white_frame;white_frame;white_frame;white_frame;;white_frame;;;"
+				picGoal="goal" picFinish="finish" picRoundabout="roundabout" picMoveForward="move_forward" picTurnBack="turn_back"
+				picTurnLeftForward="turn_left_forward" picTurnLeft="turn_left" picTurnLeftBack="turn_left_back"
+				picTurnRightForward="turn_right_forward" picTurnRight="turn_right" picTurnRightBack="turn_right_back"
+				searchingPics="search_route_1; 50; search_route_2; 50; search_route_3; 50"
+		/>
+		
+		<indicator id="SecondTurnIndicator" title="$SecondTurn" fontSize="6" width="60pd" height="60pd" bottomMargin="18pd"
+			picGoal="goal_small" picFinish="finish_small" picRoundabout="roundabout_small" picMoveForward="move_forward_small" picTurnBack="turn_back_small"
+			picTurnLeftForward="turn_left_forward_small" picTurnLeft="turn_left_small" picTurnLeftBack="turn_left_back_small"
+			picTurnRightForward="turn_right_forward_small" picTurnRight="turn_right_small" picTurnRightBack="turn_right_back_small"
+		/>
+		<indicator id="SecondTurnDistIndicator" title="$SecondTurnDistance" sourceId="GreenIndicator" width="60pd" height="60pd" textPosition="center;below" fontBold="1" autoSize="text"/>
+		<indicator id="SecondTurnDistAfterFirstIndicator" title="$SecondTurnDistAfterFirst" sourceId="GreenIndicator" width="60pd" height="60pd" textPosition="center;below" fontBold="1" autoSize="text"/>
+		
+		<indicator id="SpeedCamIndicator" title="$SpeedCam"
+				width="60pd" height="48pd" tags="speedcam" fontColor="speedCamTextColor"
+				pic1="speedcam001" pic2="speedcam002" pic3="speedcam003" pic4="speedcam004" pic5="speedcam005"
+				pic100="speedcam100" pic101="speedcam101" pic102="speedcam102" pic103="speedcam103" pic104="speedcam104" pic105="speedcam105" pic106="speedcam106"
+		/>
+		<indicator id="SpeedCamDistanceIndicator" title="$SpeedCamDistance" sourceId="BlueWhiteIndicator" width="60pd" height="20pd" autoSize="text"/>
+
+		<indicator id="TrackIndicator1" bgColor="bgColor1" autosize="text"/>
+		<indicator id="TrackIndicator2" bgColor="bgColor3" autosize="text"/>
+
+		<indicator id="DistanceTotalIndicator" title="$DistanceTotalTitle" autosize="text" format="[b]%value[/b]\n$DistanceTotal" bgColor="bgColor7"/>
+		<indicator id="DistanceTotalIndicator1" title="$DistanceTotalTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$DistanceTotal\n[b]A[/b]"/>
+		<indicator id="DistanceMovingIndicator1" title="$DistanceMovingTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$DistanceMoving\n[b]A[/b]"/>
+		<indicator id="DistanceTrafficIndicator1" title="$DistanceTrafficTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$DistanceTraffic\n[b]A[/b]"/>
+		<indicator id="TimeTotalIndicator1" title="$TimeTotalTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$TimeTotal\n[b]A[/b]"/>
+		<indicator id="TimeMovingIndicator1" title="$TimeMovingTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$TimeMoving\n[b]A[/b]"/>
+		<indicator id="TimeTrafficIndicator1" title="$TimeTrafficTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$TimeTraffic\n[b]A[/b]"/>
+		<indicator id="TimeStopIndicator1" title="$TimeStopTitle A" sourceId="TrackIndicator1" format="[b]%value[/b]\n$TimeStop\n[b]A[/b]"/>
+		<indicator id="MaxSpeedIndicator1" title="$MaxSpeedTitle A" sourceId="TrackIndicator1" format="[b]%value $kmh[/b]\n$MaxSpeed\n[b]A[/b]"/>
+		<indicator id="AvgSpeedIndicator1" title="$AvgSpeedTitle A" sourceId="TrackIndicator1" format="[b]%value $kmh[/b]\n$AvgSpeed\n[b]A[/b]"/>
+		<indicator id="DistanceTotalIndicator2" title="$DistanceTotalTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$DistanceTotal\n[b]B[/b]\n"/>
+		<indicator id="DistanceMovingIndicator2" title="$DistanceMovingTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$DistanceMoving\n[b]B[/b]"/>
+		<indicator id="DistanceTrafficIndicator2" title="$DistanceTrafficTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$DistanceTraffic\n[b]B[/b]"/>
+		<indicator id="TimeTotalIndicator2" title="$TimeTotalTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$TimeTotal [b]B[/b]\n"/>
+		<indicator id="TimeMovingIndicator2" title="$TimeMovingTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$TimeMoving\n[b]B[/b]"/>
+		<indicator id="TimeTrafficIndicator2" title="$TimeTrafficTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$TimeTraffic\n[b]B[/b]"/>
+		<indicator id="TimeStopIndicator2" title="$TimeStopTitle B" sourceId="TrackIndicator2" format="[b]%value[/b]\n$TimeStop\n[b]B[/b]"/>
+		<indicator id="MaxSpeedIndicator2" title="$MaxSpeedTitle B" sourceId="TrackIndicator2" format="[b]%value $kmh[/b]\n$MaxSpeed\n[b]B[/b]"/>
+		<indicator id="AvgSpeedIndicator2" title="$AvgSpeedTitle B" sourceId="TrackIndicator2" format="[b]%value $kmh[/b]\n$AvgSpeed\n[b]B[/b]"/>
+
+
+
+		<kbdButton
+				bgPics="kbdbtn_01; kbdbtn_02; kbdbtn_03; kbdbtn_04; kbdbtn_05; kbdbtn_06; kbdbtn_07; kbdbtn_08; kbdbtn_09"
+				bgPicsPressed="kbdbtn_p_01; kbdbtn_p_02; kbdbtn_p_03; kbdbtn_p_04; kbdbtn_p_05; kbdbtn_p_06; kbdbtn_p_07; kbdbtn_p_08; kbdbtn_p_09"
+				bgPicsDisabled="kbdbtn_d_01; kbdbtn_d_02; kbdbtn_d_03; kbdbtn_d_04; kbdbtn_d_05; kbdbtn_d_06; kbdbtn_d_07; kbdbtn_d_08; kbdbtn_d_09"
+				leftMargin="0" rightMargin="0" fontColor="kbdBtnTextColor" fontColorDisabled="kbdBtnDisabledTextColor"
+		/>
+
+		<kbdButton id="specBtn"
+				bgPics="kbdbtnt_01; kbdbtnt_02; kbdbtnt_03; kbdbtnt_04; kbdbtnt_05; kbdbtnt_06; kbdbtnt_07; kbdbtnt_08; kbdbtnt_09"
+				bgPicsPressed="kbdbtnt_p_01; kbdbtnt_p_02; kbdbtnt_p_03; kbdbtnt_p_04; kbdbtnt_p_05; kbdbtnt_p_06; kbdbtnt_p_07; kbdbtnt_p_08; kbdbtnt_p_09"
+				fontColor="kbdSpecBtnTextColor" fontSize="12"
+		/>
+
+		<kbdButton id="backspace" sourceId="specBtn" picNormal="backspace"/>
+		<kbdButton id="specLayout" sourceId="specBtn" text="123"/>
+		<kbdButton id="nextSpecLayout" sourceId="specBtn" text="..."/>
+		<kbdButton id="hide" sourceId="specBtn" picNormal="hide_keyboard"/>
+		<kbdButton id="nextABCLayout" sourceId="specBtn" picNormal="lang_button"/>
+		<kbdButton id="abcLayout" sourceId="specBtn" text="abc"/>
+
+	</declaration>
+
+	
+	<keyboard leftMargin="0" rightMargin="0" bgColor="controlBgColor" bgPics=";keyboard_top;;;;;;;">
+		<layout fontSize="14" horInterval="5%" vertInterval="5%" vertMargin="25%">
+			<row>
+				<btn char="1"/>
+				<btn char="2"/>
+				<btn char="3"/>
+				<btn char="4"/>
+				<btn char="5"/>
+			</row>
+			<row>
+				<btn char="6"/>
+				<btn char="7"/>
+				<btn char="8"/>
+				<btn char="9"/>
+				<btn char="0"/>
+			</row>
+			<row>
+				<btn char="N"/>
+				<btn char="S"/>
+				<btn char="E"/>
+				<btn char="W"/>
+				<btn char="-"/>
+			</row>
+			<row>
+				<btn action="hide"/>
+				<btn char="."/>
+				<btn char="°"/>
+				<btn char="′"/>
+				<btn action="backspace"/>
+			</row>
+		</layout>
+		<dialog sourceId="ListDialog"/>
+	</keyboard>
+
+	
+
+	<form id="MainForm" sourceId="FormWithTime">
+		<group sourceId="MenuGroup">
+			<menu>
+				<button sourceId="PicMenuLargeButton" text="$Search" bgColor="bgColor1" bgColorPressed="bgColorPressed1" picNormal="find" command="showSearchForm"/>
+				<button sourceId="PicMenuLargeButton" text="$Route" bgColor="bgColor2" bgColorPressed="bgColorPressed2" picNormal="route" command="showRouteForm"/>
+				<button sourceId="PicMenuLargeButton" text="$Settings" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="settings" command="showSettings"/>
+				<button sourceId="PicMenuSmallButton" text="$Computer" bgColor="bgColor4" bgColorPressed="bgColorPressed4" picNormal="computer" command="showTrackComputer"/>
+				<button sourceId="PicMenuSmallButton" text="$About" bgColor="bgColor5" bgColorPressed="bgColorPressed5" picNormal="about" command="showAbout"/>
+			</menu>
+		</group>
+		
+		<button text="$MainMenu" sourceId="FormTitleButton"/>
+		<button sourceId="ShowMapButton"/>
+		<button picNormal="exit" picPressed="exit_p" bottom="11pd" left="11pd" command="exit"/>
+
+		<group id="AboutBox" left="0" right="0" top="0" bottom="0" sourceId="FormWithTime" visible="0">
+			<button sourceId="BackButton"/>
+			<button text="$About" sourceId="FormTitleButton"/>
+			<button sourceId="ShowMapButton" />
+
+			<group left="15pd" right="15pd" top="45pd" height="2pd">
+				<button width="100%" height="2pd" bgColor="bgColor18"/>
+				<button width="75%" height="2pd" right="0" bgColor="bgColor2"/>
+				<button width="50%" height="2pd" right="0" bgColor="bgColor8"/>
+				<button width="25%" height="2pd" right="0" bgColor="bgColor13"/>
+			</group>
+
+			<group id="AboutGroup" left="5pd" right="5pd" top="55pd" bottom="25pd">
+				<label id="AboutLabel" left="0" right="5pd" wordWrap="0"/>
+				<button id="abc" picNormal="trc_logo" right="2pd" top="50pd"/>
+			</group>
+		</group>
+
+		<dialog id="LaunchNotice" left="0" right="0" top="0" bottom="0" bgColor="formBgColor">
+			<button fontSize="10" left="20pd" right="20pd" top="20pd" bottom="72pd" textPosition="center;top" wordWrap="1" text="$LaunchNotice" fontColor="formTextColor"/>
+			<checkBox id="CheckBox" sourceId="UsualCheckBox" text="$DontShowAgain" bottom="32pd" left="20pd" right="20pd" fontSize="8"/>
+			<button sourceId="TextButton" left="50%" bottom="10pd" text="$Agree" command="ok"/>
+		</dialog>
+		
+	</form>
+
+
+
+	<form id="SearchForm" sourceId="FormWithTime">
+
+		<group sourceId="MenuGroup">
+			<menu orientation="vert">
+				<button sourceId="PicMenuLargeButton" text="$Address" bgColor="bgColor1" bgColorPressed="bgColorPressed1" picNormal="find_adress" command="showSearchAddress"/>
+				<button sourceId="PicMenuSmallButton" text="$Place" bgColor="bgColor2" bgColorPressed="bgColorPressed2" picNormal="find_place" command="showSearchPlace"/>
+				<button id="SearchWaypointButton" sourceId="PicMenuSmallButton" text="$MyPlaces" bgColor="bgColor5" bgColorPressed="bgColorPressed5" picNormal="find_my_place" picDisabled="find_my_place_d" command="showWaypoints"/>
+				<button sourceId="PicMenuSmallButton" text="$WhatNear" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="find_what_next" command="showNearPlaces"/>
+				<button sourceId="PicMenuSmallButton" text="$Coords" bgColor="bgColor4" bgColorPressed="bgColorPressed4" picNormal="find_coordinates" command="showSearchCoords"/>
+				<button id="SearchHistoryButton" sourceId="PicMenuLargeButton" text="$History" bgColor="bgColor6" bgColorPressed="bgColorPressed6" picNormal="find_history" picDisabled="find_history_d" command="showSearchHistory"/>
+			</menu>
+		</group>
+		
+		<button sourceId="BackButton"/>
+		<button sourceId="ShowMapButton" />
+		<button text="$Search" sourceId="FormTitleButton"/>
+	</form>
+
+	
+	
+	<form id="SearchHistoryForm" sourceId="GUIForm"
+			formatExact="[size=14]%title, %city[/size][size=9]\n[color=listTextColor2]%region, %country[/color][/size]"
+			formatExactSelected="[size=14]%title, %city[/size][size=9]\n%region, %country[/size]"
+			formatNear="[size=14]$CloseTo %title, %city[/size][size=9]\n[color=listTextColor2]%region, %country[/color][/size]"
+			formatNearSelected="[size=14]$CloseTo %title, %city[/size][size=9]\n%region, %country[/size]"
+			formatFar="[size=14]%distance $From %title, %city[/size][size=9]\n[color=listTextColor2]%region, %country[/color][/size]"
+			formatFarSelected="[size=14]%distance $From %title, %city[/size][size=9]\n%region, %country[/size]">
+		
+		<button sourceId="BackButton"/>
+
+		<edit id="SearchHistoryEdit" fontSize="14" left="44pd" top="12pd" right="13pd" hint="$HistoryFilterHint"/>
+
+		<listContainer id="SearchHistoryList" sourceId="LabelList" left="5pd" right="5pd" top="44pd" bottom="35pd">
+			<button id="Delete" top="50%" right="1pd"
+					textPosition="left;bottom" picPosition="right;top" leftMargin="7pd" bottomMargin="4pd"
+					height="45pd" width="90pd" fontSize="8" text="$Delete" bgColorPressed="bgColorPressed2" bgColor="bgColor2"
+					picNormal="garbage"/>
+		</listContainer>
+		
+		<button id="ClearHistoryButton" right="13pd" left="6pd" bottom="5pd" height="25pd" bgColorPressed="bgColorPressed2"
+				bgColor="bgColor2" picNormal="delete" layout="hor" fontSize="7" text="$Clear"/>
+	</form>
+
+	
+	
+	<form id="SearchAddressForm" sourceId="FormWithTime">
+
+		<button sourceId="BackButton"/>
+		<button text="$SearchAddress" sourceId="FormTitleButton"/>
+		<button id="SearchNextButton" sourceId="ShowMapButton" command="ok"/>
+
+		<group sourceId="MenuGroup">
+			<menu orientation="vert">
+				<button id="SearchCountryButton" sourceId="PicMenuLargeButton" bgColor="bgColor1" bgColorPressed="bgColorPressed1" picNormal="find_country"/>
+				<button id="SearchCityButton" sourceId="PicMenuLargeButton" bgColorPressed="bgColorPressed2" bgColor="bgColor2" picNormal="find_city"
+						picDisabled="find_city_d"/>
+				<button id="SearchStreetButton" sourceId="PicMenuLargeButton" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="find_street"
+						picDisabled="find_street_d"/>
+				<button id="SearchHouseButton" sourceId="PicMenuSmallButton" bgColor="bgColor4" bgColorPressed="bgColorPressed4" fontSize="6" picNormal="find_house"
+						picDisabled="find_house_d"/>
+				<button id="SearchAutoHouseButton" text="$NearestAddress" fontSize="6" sourceId="PicMenuSmallButton" bgColor="bgColor10" bgColorPressed="bgColorPressed10" picNormal="find_coordinates"/>
+			</menu>
+		</group>
+		
+	</form>
+
+	
+	
+	<form id="SearchAddressListForm" sourceId="GUIForm"
+			formatListCountry="[size=14]%title[/size]"
+			formatListCity="[size=14]%title[/size]\n[size=9][color=listTextColor2]%region, %distance[/color][/size]"
+			formatListCitySelected="[size=14]%title[/size]\n[size=9]%region, %distance[/size]"
+			formatListStreet="[size=14]%title[/size]"
+			formatListHouse="[size=14]%title[/size]\n[size=9][right][color=listTextColor2]%distance[/color][/right][/size]"
+			formatListHouseSelected="[size=14]%title[/size]\n[size=9][right]%distance[/right][/size]"
+			formatLabelCountry="[center]%title[/size][/center]"
+			formatLabelCity="[center]%title, %region[/center]"
+			formatLabelStreet="[center]%title, %city[/center]">
+		<button sourceId="BackButton"/>
+		<edit id="SearchEdit" fontSize="14" left="44pd" top="12pd" right="12pd" hint="$AddressFilterHint"/>
+		<listContainer id="SearchList" sourceId="LabelList" left="4pd" top="44pd" bottom="4pd" right="4pd"/>
+	</form>
+
+	
+	
+	<form id="SearchPlaceForm" sourceId="GUIForm"
+			format="[color=listTextColor][size=14]%title[/size][/color][size=9][color=listTextColor3]\n%distance / %distanceAway,[/color][color=listTextColor2] %street, %house, %city, %region[/color][/size]"
+			formatSelected="[color=listSelectedTextColor][size=14]%title[/size][/color][size=9][color=listSelectedTextColor3]\n%distance / %distanceAway,[/color] %street, %house, %city, %region[/size]">
+		
+		<button sourceId="BackButton"/>
+		<edit id="SearchPlaceEdit" fontSize="14" left="44pd" top="12pd" right="14pd" leftMargin="3pd" hint="$PlaceFilterHint"/>
+		<checkBox id="SearchRoutePlaceCheck" text="$PlacesAround;$AlongRoute" layout="hor" fontSize="7"
+				bgColor="bgColor11" bgColorPressed="bgColorPressed11" bgColorChecked="bgColor13" bgColorCheckedPressed="bgColorPressed13"
+				picChecked="along_route" picUnchecked="not_along_route"
+				right="14pd" left="6pd" top="40pd" height="25pd" command="toggleMapDetails"/>
+		
+		<listContainer id="SearchPlaceList" sourceId="POIList" left="5pd" right="5pd" top="70pd" bottom="5pd" permanentItemButton="0">
+			<button sourceId="ListItemLargeButton" right="1pd" bgColor="bgColor8" bgColorPressed="bgColorPressed8" text="$MapObjectInfo" picNormal="info"/>
+		</listContainer>
+		
+		<group id="SearchPlaceTags" top="65pd" bottom="0" left="0" right="0">
+			<menu orientation="vert">
+				<button sourceId="PicMenuLargeButton" text="$Fuel" bgColor="bgColor5" bgColorPressed="bgColorPressed5" picNormal="find_fuel" command="writePlaceTag"/>
+				<button sourceId="PicMenuSmallButton" text="$Cafe" bgColor="bgColor1" bgColorPressed="bgColorPressed1" picNormal="find_food" command="writePlaceTag"/>
+				<button sourceId="PicMenuSmallButton" text="$Shop" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="find_shop" command="writePlaceTag"/>
+				<button sourceId="PicMenuSmallButton" text="$Cash" bgColorPressed="bgColorPressed2" bgColor="bgColor2" picNormal="find_cash" command="writePlaceTag"/>
+				<button sourceId="PicMenuSmallButton" text="$Service" bgColor="bgColor4" bgColorPressed="bgColorPressed4" picNormal="find_service" command="writePlaceTag"/>
+				<button sourceId="PicMenuLargeButton" text="$Other" bgColor="bgColor6" bgColorPressed="bgColorPressed6" picNormal="find_other" command="hidePlaceTags"/>
+			</menu>
+		</group>
+	</form>
+
+	
+	
+	<form id="SearchWaypointForm" sourceId="GUIForm"
+			format="[color=listTextColor][size=14]%title[/size][/color][size=10][color=listTextColor2]\n%distance, %text[/color][/size]"
+			formatSelected="[color=listSelectedTextColor][size=14]%title[/size][size=10]\n%distance, %text[/size][/color]">
+		
+		<button sourceId="BackButton"/>
+		<edit id="SearchWaypointEdit" fontSize="14" left="44pd" top="12pd" right="13pd" hint="$WaypointFilterHint"/>
+		
+		<listContainer id="SearchWaypointList" sourceId="POIList" left="5pd" right="5pd" top="44pd" bottom="35pd">
+			<button id="Delete" sourceId="ListItemLargeButton" right="1pd"
+					text="$Delete" bgColorPressed="bgColorPressed2" bgColor="bgColor2" picNormal="garbage"/>
+			<button id="Edit" sourceId="ListItemLargeButton" right="90pd"
+					text="$Edit" bgColorPressed="bgColorPressed8" bgColor="bgColor8" picNormal="change"/>
+		</listContainer>
+		
+		<button id="DeleteAllButton" right="13pd" left="6pd" bottom="5pd" height="25pd" bgColorPressed="bgColorPressed2"
+				bgColor="bgColor2" picNormal="delete" layout="hor" text="$DeleteAllWaypoints" fontSize="7"/>
+	</form>
+
+	<form id="EditWaypointForm" sourceId="FormWithTime">
+		<button sourceId="BackButton"/>
+		<button id="DelWaypointButton" left="44pd" right="44pd" top="10pd" bgColorPressed="bgColorPressed2" bgColor="bgColor2"
+				 picNormal="delete" fontSize="10" text="$Delete" layout="hor"/>
+		<button id="OKButton" sourceId="OKButton"/>
+		
+		<group left="5pd" top="44pd" right="5pd" bottom="22pd">
+			<group left="0" right="0">
+
+				<label text="$WaypointType:" top="5pd" fontSize="10"/>
+				
+				<comboBox id="WaypointTypeCombo" left="80pd" right="0" height="30pd" fontSize="10">
+					<dialog sourceId="FormDialog">
+						<button text="$ChangeWaypointType" sourceId="DialogTitleButton"/>
+						
+						<listContainer id="List" left="0" right="0" top="44pd" bottom="0" bgColor="controlBgColor">
+							<item width="28pd">
+								<button id="Picture" width="28pd" height="28pd"/>
+							</item>
+							<selectedItem bgColor="listSelectedBgColor">
+								<button id="Picture" width="28pd" height="28pd"/>
+							</selectedItem>
+						</listContainer>
+						
+					</dialog>
+				</comboBox>
+
+
+				<label text="$Title:" top="40pd" fontSize="10" />
+				<edit id="WaypointTitleEdit" left="80pd" right="0" top="35pd" height="33pd" fontSize="10" multiline="1"/>
+				<label text="$Description:" top="75pd" fontSize="10"/>
+				<edit id="WaypointDescEdit" left="80pd" right="0" top="73pd" height="50pd" multiline="1" fontSize="10" hint="$WaypointDescHint"/>
+				<label text="$Latitude:" top="130pd" fontSize="10"/>
+				<edit id="WaypointLatEdit" left="80pd" right="0" top="128pd" fontSize="10" height="20pd"/>
+				<label text="$Longitude:" top="153pd" fontSize="10"/>
+				<edit id="WaypointLongEdit" left="80pd" right="0" top="151pd" fontSize="10" height="20pd"/>
+				
+			</group>
+		</group>
+	</form>
+
+	
+	
+	<form id="SearchCoordsForm" sourceId="FormWithTime">
+		<button sourceId="BackButton"/>
+		<button text="$SearchCoordinates" sourceId="FormTitleButton"/>
+		<button id="SearchCoordsButton" sourceId="ShowMapButton" command="ok"/>
+
+		<group left="5pd" right="5pd" top="45pd">
+			<edit id="LatitudeEdit" left="0" right="45pd" height="30pd" hint="$Latitude"/>
+			<edit id="LongitudeEdit" left="0" right="45pd" top="40pd" height="30pd" hint="$Longitude"/>
+			<button id="SwapCoordsButton" bgColor="bgColor13" bgColorPressed="bgColorPressed13" picNormal="swap_coords" right="0" top="0" width="40pd" height="70pd"/>
+		</group>
+	</form>
+
+
+				 
+	<form id="MainMapForm" sourceId="MapForm">
+		<hotkey key="PgUp" command="incPitch"/>
+		<hotkey key="PgDown" command="decPitch"/>
+		<hotkey key="/" command="rotateAnticlockwise"/>
+		<hotkey key="*" command="rotateClockwise"/>
+
+		<indicator sourceId="TurnSchemeIndicator" left="0" top="0" command="showRouteMenu"/>
+		<indicator sourceId="TurnDistanceIndicator" left="0" top="60pd"/>
+		<indicator sourceId="FinishDistanceIndicator" left="0" top="80pd"/>
+		<indicator sourceId="FinishTimeIndicator" left="0" top="108pd"/>
+    <indicator sourceId="SpeedCamDistanceIndicator" left="0" top="175pd" tags="speedcam"/>
+    <indicator sourceId="SpeedCamIndicator" left="0pd" top="132pd" tags="speedcam"/>
+    <indicator sourceId="SecondTurnDistAfterFirstIndicator" left="60pd" tags="route; auto; secondTurn"
+				bgPics=";white_frame;white_frame;;;white_frame;;white_frame;white_frame"/>
+		<indicator sourceId="SecondTurnIndicator" left="60pd" tags="route; auto; secondTurn"/>
+
+		<indicator sourceId="SpeedIndicator" right="0" top="0" textPosition="center;bottom" command="showQuickMenu"
+				bgColor="bgColor9" bgPics="white_frame;white_frame;white_frame;white_frame;;white_frame;white_frame;white_frame;white_frame"
+				bgColorPressed="bgColorPressed9" bgPicsPressed="white_frame;white_frame;white_frame;white_frame;;white_frame;white_frame;white_frame;white_frame"/>
+		
+		<indicator id="BaseTimeIndicator" right="0" top="0" width="50pd" height="10pd" topMargin="4pd" fontBold="0" fontSize="7"
+				bgColor="bgColor9" bgPics="white_frame;white_frame;white_frame;white_frame;;white_frame;;;"/>
+		
+		<indicator sourceId="BatteryIndicator" top="73pd" right="25pd" tags="!auto"/>
+
+		<button picNormal="show_cm" command="showCursorMap" tags="!auto"
+				right="0" top="50pd" height="23pd" width="50pd"
+				bgColor="bgColor12" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame"
+				bgColorPressed="bgColorPressed12" bgPicsPressed=";;;white_frame;;white_frame;white_frame;white_frame;white_frame"/>
+
+		<button id="IncPitchButton" sourceId="PitchButton" top="89pd" right="0" picNormal="pitch_dec" command="incPitch"/>
+		<button id="DecPitchButton" sourceId="PitchButton" top="118pd" right="0" picNormal="pitch_inc" command="decPitch"/>
+
+		<button sourceId="GreenTextButton" command="showSearchForm" tags="!auto" bottom="0" left="0" width="60pd" text="$Search" picNormal="menu_small"/>
+		<button sourceId="GreenTextButton" command="showMainMenu" tags="!auto" bottom="0" right="0" width="50pd" text="$Menu" picNormal="menu_small"/>
+
+		<button id="MapGotoGPSButton" picNormal="goto_gps" picPressed="goto_gps_p" bottom="40pd" right="50%" tags="gps; manual"/>
+		<button id="MapGPSState" picNormal="gps_off; gps_bad; gps_valid" picPressed="gps_off_p; gps_bad_p; gps_valid_p" top="73pd" right="5pd" command="showGPSSettings" tags="!auto"/>
+
+		<menu id="MapPopupMenu" sourceId="PopupMenu" tags="ignoreModes">
+			<button id="MapMenuNewIndicator" sourceId="PopupMenuButton" text="$AddIndicator"/>
+			<button id="MapMenuReroute" sourceId="PopupMenuButton" text="$Reroute"/>
+		</menu>
+
+		<menu id="MapQuickMenu" visible="0" tags="ignoreModes">
+			<button sourceId="QuickMenuLargeButton" text="$Waypoint" bgColor="bgColor2" bgColorPressed="bgColorPressed2" picNormal="note" command="addWaypoint"/>
+			
+			<checkBox id="QuickMenu3DCheck" sourceId="QuickMenuToggle" command="toggle3D" text="3D"
+					bgColorChecked="bgColor5" bgColorCheckedPressed="bgColorPressed5" picChecked="3D" picUnchecked="3D_p"/>
+			
+			<checkBox id="QuickMenuMuteCheck" sourceId="QuickMenuToggle" command="toggleMuteSound" text="$MuteQuickMenu"
+					bgColorChecked="bgColor14" bgColorCheckedPressed="bgColorPressed14" picChecked="sound" picUnchecked="sound_p"/>
+			
+			<button sourceId="QuickMenuButton" text="$Menu" bgColor="bgColor6" bgColorPressed="bgColorPressed6" picNormal="menu" command="showMainMenu"/>
+
+			<checkBox id="QuickMenuTrackCheck" sourceId="QuickMenuToggle" command="toggleWriteTrack" text="$Track"
+					bgColorChecked="bgColor15" bgColorCheckedPressed="bgColorPressed15" picChecked="tracks" picUnchecked="tracks_p"/>
+			
+			<button sourceId="QuickMenuButton" text="$Settings" picNormal="settings" bgColor="bgColor10" bgColorPressed="bgColorPressed10" command="showSettings"/>
+
+			<checkBox id="QuickMenuDetailCheck" sourceId="QuickMenuToggle" command="toggleMapDetails" text="$DetailsQuickMenu"
+					 bgColorChecked="bgColor16" bgColorCheckedPressed="bgColorPressed16" picChecked="poi" picUnchecked="poi_p"/>
+		</menu>
+
+		<menu id="MapRouteMenu" visible="0" tags="ignoreModes">
+			<button sourceId="QuickMenuLargeButton" text="$SkipGoal" picNormal="skip_goal" bgColor="bgColor2" bgColorPressed="bgColorPressed2" command="skipGoal"/>
+			
+			<checkBox id="RouteMenuSimulationCheck" sourceId="QuickMenuToggle" command="toggleSimulation" text="$Simulation"
+					bgColorPressed="bgColorPressed5" bgColor="bgColor5" bgColorChecked="bgColor11" bgColorCheckedPressed="bgColorPressed11"
+					picUnchecked="simulation" picChecked="simulation_off" fontColor="checkBoxTextColor" fontColorPressed="checkBoxTextColor"/>
+			
+			<button sourceId="QuickMenuButton" text="$RouteQM" picNormal="route_info" bgColor="bgColor6" bgColorPressed="bgColorPressed6" command="showRouteForm"/>
+			<button sourceId="QuickMenuButton" text="$ClearRoute" bgColor="bgColor16" bgColorPressed="bgColorPressed16" picNormal="del_route" command="delRoute"/>
+			<button sourceId="QuickMenuButton" text="$ShowEntireRouteButton" bgColor="bgColor15" bgColorPressed="bgColorPressed15" picNormal="show_route" command="showEntireRoute"/>
+		</menu>
+	</form>
+
+
+		 
+	<form id="SearchMapForm" sourceId="MapForm" bgPics="frame_01;frame_01;frame_01;frame_01;;frame_01;frame_01;frame_01;frame_01">
+		<button top="15" left="15" picNormal="back_button_blue" picPressed="back_button_blue_p" command="goBack"/>
+		
+		<button sourceId="GreenButton" picNormal="to_main_map" picPressed="to_main_map" width="50pd" height="29pd"
+				bottom="0" right="0" tags="!entireRoute" command="showMainMap"/>
+		
+		<indicator id="TurnSchemeIndicator" sourceId="TurnSchemeIndicator" visible="0" tags="ignoreModes"/>
+		<button sourceId="GreenButton" width="50pd" height="50pd" right="0" top="0" picNormal="set_finish" command="routeToCursor" tags="!entireRoute"/>
+
+		<button height="23pd" width="50pd" right="0" top="50pd"
+				bgColor="bgColor9" bgPics=";;;white_frame;;white_frame;white_frame;white_frame;white_frame"
+				bgColorPressed="bgColorPressed9" bgPicsPressed=";;;white_frame;;white_frame;white_frame;white_frame;white_frame"
+				picNormal="route_menu" command="showSearchMapRouteMenu" tags="!entireRoute"/>
+
+		<menu id="SearchMapRouteMenu" size="2" visible="0" tags="ignoreModes">
+			<button sourceId="PicMenuSmallButton" text="$FastestRoute" picNormal="fastest_route" bgColor="bgColor16" bgColorPressed="bgColorPressed16" command="findFastestRoute"/>
+			<button sourceId="PicMenuSmallButton" text="$SetStartPoint" picNormal="start_point" bgColor="bgColor15" bgColorPressed="bgColorPressed15" command="setStartPoint"/>
+			<button sourceId="PicMenuSmallButton" text="$ShortestRoute" picNormal="shortest_route" bgColor="bgColor13" bgColorPressed="bgColorPressed13" command="findShortestRoute"/>
+			<button sourceId="PicMenuSmallButton" text="$AddFirstGoal" picNormal="first_goal" bgColor="bgColor11" bgColorPressed="bgColorPressed11" command="addFirstGoal"/>
+			<button sourceId="PicMenuSmallButton" text="$StraightRoute" picNormal="straight_route" bgColor="bgColor2" bgColorPressed="bgColorPressed2" command="findStraightRoute"/>
+			<button sourceId="PicMenuSmallButton" text="$AddGoalBefore" picNormal="goal_before" bgColor="bgColor17" bgColorPressed="bgColorPressed17" command="addGoalBefore"/>
+			<button sourceId="PicMenuSmallButton" text="$Settings" picNormal="settings" bgColor="bgColor6" bgColorPressed="bgColorPressed6" command="showNavigationSettings"/>
+			<button sourceId="PicMenuSmallButton" text="$AddGoalAfter" picNormal="goal_after" bgColor="bgColor8" bgColorPressed="bgColorPressed8" command="addGoalAfter"/>
+		</menu>
+	</form>
+
+	
+	
+	<form id="SettingsForm" sourceId="FormWithTime">
+		<group sourceId="MenuGroup">
+			<menu>
+				<button sourceId="PicMenuLargeButton" bgColor="bgColor1" bgColorPressed="bgColorPressed1" picNormal="settings_navigation" text="$Navigation" command="showNavigationSettings"/>
+				<button sourceId="PicMenulargeButton" bgColorPressed="bgColorPressed2" bgColor="bgColor2" picNormal="settings_map" text="$Map" command="showMapSettings"/>
+				<button sourceId="PicMenuLargeButton" bgColor="bgColor5" bgColorPressed="bgColorPressed5" picNormal="settings_interface" text="$Interface" command="showInterfaceSettings"/>
+				<button sourceId="PicMenuLargeButton" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="settings_gps" text="$GPS" command="showGPSSettings"/>
+			</menu>
+		</group>
+		<button sourceId="ShowMapButton" />
+		<button text="$Settings" sourceId="FormTitleButton"/>
+		<button sourceId="BackButton"/>
+	</form>
+
+
+
+	<form id="GPSSettingsForm" sourceId="FormWithTime" >
+		<button sourceId="BackButton"/>
+		<button text="$GPSSettings" sourceId="FormTitleButton"/>
+		<button sourceId="OKButton"/>
+
+		<group sourceId="MenuGroup">
+			<menu>
+
+				<if os="NT; CE">
+					<checkBox id="UseGPSCheck" sourceId="MenuToggle" text="$UseGPS"/>
+					<button id="AutoConfigureButton" sourceId="PicMenuSmallButton" bgColorPressed="bgColorPressed2" bgColor="bgColor2"
+							picNormal="autoconfig_gps" text="$AutoConfigure"/>
+				</if>
+
+				<if os="Android; iOS">
+					<checkBox id="UseGPSCheck" sourceId="MenuLargeToggle" text="$UseGPS"/>
+					<checkBox id="UseNetworkCheck" sourceId="MenuLargeToggle" text="$UseNetwork"/>
+				</if>
+
+				<group height="70pd" width="144pd" bgColor="bgColor5">
+					<label id="StateLabel" bottom="0" left="50%" fontSize="7"/>
+					<indicator sourceId="SatellitesIndicator"/>
+				</group>
+
+				<if os="NT; CE">
+					<group height="70pd" width="144pd" bgColor="bgColor6"
+							leftMargin="3pd" rightMargin="3pd" bottomMargin="3pd" topMargin="3pd">
+
+						<checkBox id="UseGPSAPICheck" fontSize="7" text="$UsePort" left="0" right="0"
+								picUnchecked="cb_on_port" picUncheckedPressed="cb_off_p_port"
+								picChecked="cb_off_port" picCheckedPressed="cb_on_p_port"/>
+
+						<edit id="PortNumberEdit" left="0" top="21pd" right="0" height="20pd" hint="$Port"/>
+						<edit id="PortSpeedEdit" left="0" bottom="0" right="0" height="20pd" hint="$PortSpeed"/>
+
+					</group>
+
+					<checkBox id="AdjustSystemTimeCheck" sourceId="MenuLargeToggle" text="$AdjustTime"/>
+				</if>
+
+				<group sourceId="ComboBoxGroup">
+					<label text="$BgLocationMode" top="5pd" left="5pd" fontSize="7"/>
+
+					<comboBox id="BgLocationModeCombo" sourceId="MenuComboBox">
+						<dialog sourceId="ListDialog">
+							<button sourceId="DialogTitleButton" text="$BgLocationMode"/>
+						</dialog>
+					</comboBox>
+
+				</group>
+
+			</menu>
+		</group>
+	</form>
+
+
+
+	<form id="MapSettingsForm" sourceId="FormWithTime" format="[size=14]%title[/size]\n[size=12]%path[/size]">
+		<button sourceId="BackButton"/>
+		<button text="$MapSettings" sourceId="FormTitleButton"/>
+		<button sourceId="OKButton"/>
+
+		<group sourceId="MenuGroup">
+			<menu>
+				
+				<group sourceId="ComboBoxGroup">
+					<label text="$Atlas" top="5pd" left="5pd" fontSize="7"/>
+					<button sourceId="TextButton" right="0" width="50pd" height="20pd" text="..." command="showContentPaths"/>
+					<comboBox id="AtlasCombo" sourceId="MenuComboBox">
+						<dialog sourceId="FormDialog">
+							<listContainer id="List" sourceId="LabelList" left="0" right="0" top="45pd" bottom="0"/>
+							<button text="$SelectAtlas" sourceId="DialogTitleButton"/>
+						</dialog>
+					</comboBox>
+				</group>
+				
+				<checkBox id="RotateCheck" sourceId="MenuToggle" text="$RotateByMoving" />
+				<checkBox id="AutoScaleCheck" sourceId="MenuToggle" text="$AutoScale" />
+				<checkBox id="ShowTrackCheck" sourceId="MenuToggle" text="$ShowTrack"/>
+				<checkBox id="SmoothingCheck" sourceId="MenuToggle" text="$SmoothLines" />
+				<checkBox id="SmoothMovingCheck" sourceId="MenuToggle" text="$SmoothMoving" />
+				<checkBox id="RotateDamperCheck" sourceId="MenuToggle" text="$RotateDamper" />
+				<checkBox id="BindToRoadCheck" sourceId="MenuLargeToggle" text="$BindToRoad" />
+				<checkBox id="DetailCheck" sourceId="MenuToggle" text="$DetailsSettings" />
+				<checkBox id="ShowSpeedCamsCheck" sourceId="MenuToggle" text="$ShowSpeedCams" />
+				<checkBox id="PredictPositionCheck" sourceId="MenuToggle" text="$PredictPosition" visible="0"/>
+			</menu>
+		</group>
+	</form>
+
+	
+	
+	<form id="InterfaceSettingsForm" sourceId="FormWithTime">
+		<group sourceId="MenuGroup">
+			<menu>
+				<checkBox id="BacklightCheck" sourceId="MenuToggle" text="$HoldBacklight" />
+
+				<checkBox id="MatchWordBeginningCheck" sourceId="MenuToggle" text="$MatchWordBeginning" />
+
+				<group bgColor="bgColor7" width="144pd" height="70pd" rightMargin="2pd" topMargin="2pd">
+					<label text="$Sound" top="5pd" left="5pd" fontSize="7"/>
+					<checkBox id="MuteSoundCheck" top="0" right="0" height="28pd" width="28pd"
+							bgColor="bgColor6" bgColorPressed="bgColorPressed6" bgColorChecked="menuCheckBoxOffBgColor" bgColorCheckedPressed="menuCheckBoxOffPressedBgColor"
+							picPosition="right;top" picChecked="settings_off" picUnchecked="settings_on"/>
+					<slider id="SoundVolumeSlider" left="3pd" right="3pd" bottom="0" height="35pd"/>
+				</group>
+
+				<group sourceId="ComboBoxGroup">
+					<label text="$Scheme:" top="5pd" left="5pd" fontSize="7"/>
+					<comboBox id="SoundCombo" sourceId="MenuComboBox">
+						<dialog sourceId="ListDialog">
+							<button sourceId="DialogTitleButton" text="$SelectSoundScheme"/>
+						</dialog>
+					</comboBox>
+				</group>
+
+				<group sourceId="ComboBoxGroup">
+					<label text="$Skin:" top="5pd" left="5pd" fontSize="7"/>
+					<comboBox id="SkinCombo" sourceId="MenuComboBox">
+						<dialog sourceId="ListDialog">
+							<button sourceId="DialogTitleButton" text="$SelectSkin"/>
+						</dialog>
+					</comboBox>
+				</group>
+
+				<group sourceId="ComboBoxGroup">
+					<label text="$Mode:" top="5pd" left="5pd" fontSize="7"/>
+					<comboBox id="DayNightCombo" sourceId="MenuComboBox">
+						<dialog sourceId="ListDialog">
+							<button sourceId="DialogTitleButton" text="$SelectDayNightMode"/>
+						</dialog>
+					</comboBox>
+				</group>
+
+				<group sourceId="ComboBoxGroup">
+					<label text="$Language:" top="5pd" left="5pd" fontSize="7"/>
+					<comboBox id="LanguageCombo" sourceId="MenuComboBox">
+						<dialog sourceId="ListDialog">
+							<button sourceId="DialogTitleButton" text="$SelectLanguage"/>
+						</dialog>
+					</comboBox>
+				</group>
+
+				<button id="LayoutsButton" sourceId="PicMenuSmallButton" bgColor="bgColor3" bgColorPressed="bgColorPressed3" picNormal="lang_layouts" text="$KeyboardLayouts"/>
+				<checkBox id="AutoEditWaypointCheck" sourceId="MenuToggle" text="$AutoEditWaypoint"/>
+
+				<if os="Android; iOS">
+					<checkBox id="UseSystemKeyboardCheck" sourceId="MenuToggle" text="$UseSystemKeyboard"/>
+				</if>
+			</menu>
+		</group>
+		
+		<dialog id="LayoutsDialog" sourceId="OKCancelDialog">
+			<listContainer id="List" sourceId="CheckBoxList" left="0" right="0" top="44pd" bottom="0"/>
+			<button sourceId="DialogTitleButton" text="$SelectLayout" right="30pd"/>
+		</dialog>
+		
+		<button sourceId="OKButton"/>
+		<button sourceId="BackButton"/>
+		<button text="$InterfaceSettings" sourceId="FormTitleButton"/>
+	</form>
+
+
+	
+	<form id="NavigationSettingsForm" sourceId="FormWithTime">
+		<button sourceId="BackButton"/>
+		<button text="$NavigationSettings" sourceId="FormTitleButton"/>
+		<button sourceId="OKButton"/>
+
+		<group sourceId="MenuGroup">
+			<menu>
+				<checkBox id="ShortestOrFastestCheck" sourceId="MenuLargeToggle" text="$SearchFastest"/>
+				<checkBox id="AvoidUnpavedCheck" sourceId="MenuToggle" text="$AvoidUnpaved"/>
+				<checkBox id="AvoidUTurnsCheck" sourceId="MenuToggle" text="$AvoidUTurns"/>
+				<checkBox id="WriteTrackCheck" sourceId="MenuToggle" text="$WriteTrack"/>
+				<checkBox id="SpeedLimitCheck" sourceId="MenuToggle" text="$SpeedLimitWarning"/>
+				<checkBox id="ShowEntireRouteCheck" sourceId="MenuToggle" text="$ShowEntireRouteSettings"/>
+				<checkBox id="ShowSecondTurnCheck" sourceId="MenuToggle" text="$ShowSecondTurnSettings"/>
+			</menu>
+		</group>
+
+	</form>
+
+
+
+	<ifnot os="iOS">
+		<form id="ContentPathsForm" sourceId="FormWithTime">
+			<button sourceId="BackButton"/>
+			<button sourceId="FormTitleButton" text="$MapsPath"/>
+			<button sourceId="OKButton"/>
+			
+			<group left="0" right="0" top="40pd" bottom="5pd" leftMargin="4pd" rightMargin="4pd">
+				<button id="AddPathButton" sourceId="TextButton" text="$AddMapsPath" width="92pd" left="5pd" bottom="4pd"/>
+				<button id="DelPathButton" sourceId="TextButton" text="$DelMapsPath" width="92pd" left="110pd" bottom="4pd"/>
+				
+				<listContainer id="MapsPathsList" left="0" right="0" top="0" bottom="30pd">
+					<item sourceId="ListItemGroup" height="28pd">
+						<label id="Label" right="2pd" left="2pd" fontColor="listTextColor" ellipsisPos="center"/>
+					</item>
+					<selectedItem sourceId="ListSelectedItemGroup" height="28pd">
+						<label id="Label" right="2pd" left="2pd" fontColor="listSelectedTextColor" ellipsisPos="center"/>
+					</selectedItem>
+				</listContainer>
+				
+				<label text="$ContentPath:" left="4pd" top="120pd" visible="0"/>
+				<edit id="ContentPathEdit" left="0" top="140pd" right="44pd" visible="0"/>
+				<button id="ContentPathButton" sourceId="TextButton" top="96pd" right="0" width="40pd" text="..." visible="0"/>
+			</group>
+			
+		</form>
+	</ifnot>
+	
+	
+	
+	<form id="IndicatorsForm" sourceId="FormWithTime">
+		<label text="$IndicatorType:" left="10pd" top="10pd"/>
+		<comboBox id="IndicatorTypeCombo" left="80pd" top="5pd" right="4pd">
+			<dialog sourceId="ListDialog"/>
+			<item>GPS</item>
+			<item>$NavigationIndicators</item>
+			<item>$System</item>
+			<item>$Debug</item>
+			<item>$TrackComputer</item>
+		</comboBox>
+		<label text="$Indicator:" left="10pd" top="40pd"/>
+		<listBox id="IndicatorsList" left="80pd" top="40pd" right="4pd" bottom="60pd"/>
+		<button sourceId="OKButton"/>
+		<button sourceId="BackButton"/>
+		<button sourceId="ShowMapButton" />
+	</form>
+
+	
+	
+	<form id="TrackIndicatorsForm" sourceId="GUIForm">
+		<button sourceId="BackButton"/>
+		<button sourceId="FormTitleButton" text="$SelectIndicator"/>
+		<listBox id="TrackIndicatorsList" top="44pd" bottom="10pd" left="10pd" right="10pd"/>
+	</form>
+
+	
+	
+	<form id="TrackComputerForm" sourceId="FormWithTime">
+		<button sourceId="BackButton"/>
+		<button sourceId="FormTitleButton" text="$Computer"/>
+		<button sourceId="ShowMapButton" />
+
+		<group sourceId="MenuGroup">
+			<menu>
+				<trackIndicator id="indicator1" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator2" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator3" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator4" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator5" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator6" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator7" sourceId="PicMenuSmallButton"/>
+				<trackIndicator id="indicator8" sourceId="PicMenuSmallButton"/>
+			</menu>
+		</group>
+
+		<menu id="TrackIndicatorMenu" sourceId="PopupMenu">
+			<button sourceId="PopupMenuButton" text="$ChooseIndicator" command="chooseIndicator"/>
+			<button id="TrackIndicatorMenuReset" sourceId="PopupMenuButton" text="$ResetIndicator" command="resetIndicator" fontColor="popupTextColor2"/>
+		</menu>
+	</form>
+		
+
+
+	<form id="RouteForm" sourceId="GUIForm"
+			formatTurn="%title\n%distanceTo"
+			formatGoalExact="%title, %city\n%distanceTo"
+			formatGoalNear="$CloseTo %title, %city\n%distanceTo"
+			formatGoalFar="%distance $From %title, %city\n%distanceTo"
+			picGoal="goal_small" picFinish="finish_small" picRoundabout="roundabout_small" picMoveForward="move_forward_small" picTurnBack="turn_back_small"
+			picTurnLeftForward="turn_left_forward_small" picTurnLeft="turn_left_small" picTurnLeftBack="turn_left_back_small"
+			picTurnRightForward="turn_right_forward_small" picTurnRight="turn_right_small" picTurnRightBack="turn_right_back_small">
+
+		<button sourceId="BackButton"/>
+		<button right="44pd" left="44pd" top="10pd" bgColor="bgColor17" bgColorPressed="bgColorPressed17" picNormal="show_route_1"
+				layout="hor" text="$ShowEntireRouteButton" fontSize="8" command="showEntireRoute"/>
+		<button sourceId="ShowMapButton" />
+
+		<listContainer id="RouteList" left="4pd" right="4pd" top="40pd" bottom="4pd">
+			<item sourceId="ListItemGroup">
+				<button id="Picture" sourceId="BlueIndicator" fontSize="6" width="40pd" height="40pd" layout="center"/>
+				<label id="Label" left="44pd" right="3pd" fontColor="listTextColor"/>
+			</item>
+			<selectedItem sourceId="ListSelectedItemGroup">
+				<button id="Picture" sourceId="BlueIndicator" fontSize="6" width="40pd" height="40pd" layout="center"/>
+				<label id="Label" left="44pd" right="3pd" fontColor="listSelectedTextColor" />
+			</selectedItem>
+		</listContainer>
+		
+	</form>
+
+	
+	
+	<dialog id="MessageBoxOK" sourceId="MessageBox">
+		<button sourceId="OKButton" right="50%" top="" bottom="3pd"/>
+	</dialog>
+
+	
+	
+	<dialog id="MessageBoxOKCancel" sourceId="MessageBox">
+		<button picNormal="back" picPressed="back_p" command="goBack" bottom="0"/>
+		<button sourceId="OKButton" right="0" top="" bottom="0"/>
+	</dialog>
+
+	
+	
+	<dialog id="CustomMessageBox" sourceId="MessageBox">
+		<button sourceId="TextButton" fontSize="10" autoSize="enlarge"/>
+	</dialog>
+
+	
+	
+	<dialog id="MapObjectInfoDialog" sourceId="FormDialog"
+			format="[b][size=14]%title[/size][/b]\n[right][size=10]%street, %house\n%city\n[color=infoWindowAdrTextColor]%country, %region[/color][/size]\n\n[size=8]%phone%fax%email%web%time%text[/size][/right]">
+		<group left="0" right="0" top="44pd" bottom="0" bgColor="bgColor6">
+			<label id="MapObjectInfoLabel" leftMargin="5pd" rightMargin="5pd" topMargin="5pd" left="0" right="0" wordWrap="1"/>
+		</group>
+	</dialog>
+
+	
+	
+	<dialog id="MapExpireDialog" left="10pd" right="10pd" top="40pd" bottom="40pd" bgColor="formBgColor">
+
+		<group left="5pd" bottom="5pd" top="5pd" width="2pd">
+			<button width="2pd" height="100%" bottom="0" bgColor="bgColor18"/>
+			<button width="2pd" height="75%" bottom="0" bgColor="bgColor2"/>
+			<button width="2pd" height="50%" bottom="0" bgColor="bgColor8"/>
+			<button width="2pd" height="25%" bottom="0" bgColor="bgColor13"/>
+		</group>
+
+		<group left="15pd" right="5pd" top="15pd" bottom="0">
+			<label id="Text" left="0" right="0" wordWrap="1" />
+		</group>
+		
+		<button sourceId="OKButton" top="" bottom="0"/>
+	</dialog>
+		
+	
+	
+	<ifnot os="iOS">
+		<dialog id="SelectPathDialog" sourceId="OKCancelDialog">
+			<label id="PathLabel" fontSize="11" left="34pd" top="14pd" right="34pd" height="18pd" autoSize="0" ellipsisPos="center"/>
+			<listContainer id="List" left="0" right="0" top="44pd" bottom="0">
+				<item id="Parent" sourceId="ListItemGroup" height="32pd">
+					<label id="Label" fontColor="listTextColor" ellipsisPos="center" autoSize="0" left="2pd" right="2pd" top="50%"/>
+				</item>
+				<item id="Disk" sourceId="ListItemGroup" height="32pd">
+					<button top="50%" picNormal="disk"/>
+					<label id="Label" fontColor="listTextColor" ellipsisPos="center" autoSize="0" left="28pd" right="2pd" top="50%"/>
+				</item>
+				<item id="Folder" sourceId="ListItemGroup" height="32pd">
+					<button top="50%" picNormal="folder"/>
+					<label id="Label" fontColor="listTextColor" ellipsisPos="center" autoSize="0" left="28pd" right="2pd" top="50%"/>
+				</item>
+				<item id="File" sourceId="ListItemGroup" height="32pd">
+					<button top="50%" picNormal="file"/>
+					<label id="Label" fontColor="listTextColor" ellipsisPos="center" autoSize="0" left="28pd" right="2pd" top="50%"/>
+				</item>
+			</listContainer>
+		</dialog>
+	</ifnot>
+	
+</gui>

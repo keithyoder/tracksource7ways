@@ -1,0 +1,291 @@
+<map>
+
+  <const
+    BuildingsAreaColor="#000038"
+    RealBuildingsColor="#509890"
+    BuildingsAreaColorLite="#2A0024"
+    WaterObjectsColor="#15015A"
+    NatureGreenColor="#005214"
+    />
+
+  <map groundColor="#000022" skyColor="#290028" horizonSize="15"/>
+
+  <cursor width="9" height="12" alt="6" leftFrontColor="#1060E0" rightFrontColor="#004DC8" leftBackColor="#3080E0" rightBackColor="#3080E0" stopColor="#1060E0" coarseColor="#ECC2E1" edgeColor="#CEEAFF"/>
+
+  <scale color="gray" borderColor="#000000" fontSize="9" fontBold="1" left="25%" minWidth="15"/>
+
+  <route goalPic="goal" finishPic="finish" startPic="start">
+    <road color="#F641EB" edgeColor="#000000" nextColor="#F641EB" nextEdgeColor="#000000" pixels="10pd" metres="8"/>
+    <straight color="#F641EB" edgeColor="black" nextColor="#F641EB" nextEdgeColor="#000000" pixels="10pd" metres="8"/>
+    <turn color="#FFFFFF" edgeColor="#000000" width="50%" minSegment="20" maxBefore="50" maxAfter="50"/>
+  </route>
+
+  <track color="#33FFFF"/>
+
+  <polygons>
+    <polygon color="gray" edgeColor="dkgray" fontSize="10" fontBold="0" fontColor="#FFFFFF" fontBorderColor="#000000" guiPicture="default"/>
+	  <polygon type="0x1" color="BuildingsAreaColor" verbal="Городская застройка более 200 тыс. нас."/>
+	  <polygon type="0x2" color="BuildingsAreaColor" verbal="Городская застройка менее 200 тыс. нас."/>
+	  <polygon type="0x3" color="BuildingsAreaColorLite" verbal="Сельская застройка"/>
+	  <polygon type="0x4" color="#102010" verbal="Военная база" pattern="zapretnaya_zona"/>
+	  <polygon type="0x5" color="#505050" verbal="Парковка"/>
+	  <polygon type="0x6" color="RealBuildingsColor" verbal="Гаражи"/>
+	  <polygon type="0x7" color="#C08040" verbal="Аэропорт"/>
+	  <polygon type="0x8" color="#AA2200" verbal="Место для торговли"/>
+	  <polygon type="0x9" color="#2b2b2b" verbal="Пристань"/>
+	  <polygon type="0xa" color="#70A970" verbal="Территория ВУЗ или школы"/>
+	  <polygon type="0xb" color="#882222" verbal="Территория больницы"/>
+	  <polygon type="0xc" color="#2b2b2b" fontColor="#CC3300" fontBorderColor="#000000" verbal="Промышленная зона"/>
+	  <polygon type="0xd" color="#886611" fontColor="#00FF33" fontBorderColor="gray" verbal="Резервация, заповедник"/>
+	  <polygon type="0xe" color="#404060" verbal="Взлетно-посадочная полоса"/>
+	  <polygon type="0x13" color="RealBuildingsColor" verbal="Здание/искусcтвенное сооружение"/>
+	  <polygon type="0x14-0x16" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Национальный парк"/>
+	  <polygon type="0x17" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Городской парк" pattern="gorodskoi_park"/>
+	  <polygon type="0x18" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Поле для гольфа" pattern="trava"/>
+	  <polygon type="0x19" color="#BDFFFF" verbal="Спортивный комплекс"/>
+	  <polygon type="0x1a" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Кладбище" pattern="kladbische"/>
+	  <polygon type="0x1e-0x20" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray"  verbal="Государственный парк"/>
+	  <polygon type="0x28" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Море океан"/>
+	  <polygon type="0x29" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Водоем"/>
+	  <polygon type="0x32" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Море"/>
+	  <polygon type="0x3b" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Водоем"/>
+	  <polygon type="0x3c-0x44" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Озеро от крупного до маленкого"/>
+	  <polygon type="0x45" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Водоем"/>
+	  <polygon type="0x46-0x49" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Реки от крупной до малой"/>
+	  <polygon type="0x4a-0x4b" fill="0" color="#1b1e1c" verbal="Область выделения/покрытия карты"/>
+	  <polygon type="0x4c" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Пересыхающая река или озеро"/>
+	  <polygon type="0x4d" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Ледник"/>
+	  <polygon type="0x4e" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Фруктовый сад или огород" pattern="sad"/>
+	  <polygon type="0x4f" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Кустарник" pattern="kustarnik"/>
+	  <polygon type="0x50" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Лес"/>
+	  <polygon type="0x51" color="WaterObjectsColor" fontColor="#00CCFF" fontBorderColor="gray" verbal="Болото" pattern="boloto"/>
+	  <polygon type="0x52" color="NatureGreenColor" verbal="Тундра"/>
+	  <polygon type="0x53" color="#404030" verbal="Отмель" pattern="sand"/>
+	  <polygon type="0x68-0x69" color="#585858" verbal="Улица крупная/магистраль"/>
+	  <polygon type="0x6a-0x6b" color="#585858" verbal="Площадь дорога улица"/>
+	  <polygon type="0x6c" color="RealBuildingsColor" verbal="Жилое здание"/>
+	  <polygon type="0x6d" color="RealBuildingsColor" verbal="Офисное здание"/>
+	  <polygon type="0x6e" color="RealBuildingsColor" verbal="Общественное здание"/>
+	  <polygon type="0x6f" color="RealBuildingsColor" verbal="Промышленное сооружение"/>
+	  <polygon type="0x70" color="RealBuildingsColor"  verbal="Область черного цвета"/>
+	  <polygon type="0x71" color="#3a1103" verbal="Область темно красного цвета"/>
+	  <polygon type="0x72" color="#17311a" verbal="Область "/>
+	  <polygon type="0x73" color="#372d00" verbal="Область "/>
+	  <polygon type="0x74" color="#022040" verbal="Область "/>
+	  <polygon type="0x75" color="#3a021f" verbal="Область "/>
+	  <polygon type="0x76" color="#002f2e" verbal="Область "/>
+	  <polygon type="0x77" color="#3a3a3a" verbal="Область "/>
+	  <polygon type="0x78" color="#2a2a2a" verbal="Область "/>
+	  <polygon type="0x79" color="#612421" verbal="Область "/>
+	  <polygon type="0x7a" color="#126c1e" verbal="Область "/>
+	  <polygon type="0x7b" color="#70541c" verbal="Область "/>
+	  <polygon type="0x7c" color="#0f4173" verbal="Область "/>
+	  <polygon type="0x7d" color="#6a2c4c" verbal="Область "/>
+	  <polygon type="0x7e" color="#43655d" verbal="Область "/>
+	  <polygon type="0x7f" color="#5d5d5d" verbal="Область "/>
+	  <polygon type="0x80" color="RealBuildingsColor" verbal="Надпись"/>
+	  <polygon type="0x81" color="NatureGreenColor" verbal="Заболоченный лес"/>
+	  <polygon type="0x82" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Низкорослый лес"/>
+	  <polygon type="0x83" color="NatureGreenColor" verbal="Редколесье"/>
+	  <polygon type="0x84" color="NatureGreenColor" verbal="Горелый лес/Сухостой"/>
+	  <polygon type="0x85" color="NatureGreenColor" verbal="Вырубки леса"/>
+	  <polygon type="0x86" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Виноградник"/>
+	  <polygon type="0x87" color="WaterObjectsColor" verbal="Рисовые поля"/>
+	  <polygon type="0x88" color="NatureGreenColor" verbal="Луга"/>
+	  <polygon type="0x89" color="#404030" verbal="Пески"/>
+	  <polygon type="0x8a" color="dkgray" verbal="Каменистая поверхность"/>
+	  <polygon type="0x8b" color="dkgray" verbal="Солончаки"/>
+	  <polygon type="0x8c" color="#405000" verbal="Тростник"/>
+	  <polygon type="0x8d" color="NatureGreenColor" verbal="Водоросли"/>
+	  <polygon type="0x8e" color="NatureGreenColor" verbal="Колючий кустарник"/>
+	  <polygon type="0x8f" color="NatureGreenColor" verbal="Бурелом"/>
+	  <polygon type="0x90" color="#D3F5A5" verbal="Стланик"/>
+	  <polygon type="0x91" color="#D3F5A5" verbal="Саксаул"/>
+	  <polygon type="0x92" color="NatureGreenColor" verbal="Заросли бамбука"/>
+	  <polygon type="0x93" color="NatureGreenColor" verbal="Пальмовая роща"/>
+	  <polygon type="0x94" color="NatureGreenColor" verbal="Мангровые заросли"/>
+	  <polygon type="0x95" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Высокая трава"/>
+	  <polygon type="0x96" color="NatureGreenColor" verbal="Мхи"/>
+	  <polygon type="0x97" color="NatureGreenColor" verbal="Лишайники"/>
+	  <polygon type="0x98" color="NatureGreenColor" fontColor="#00FF33" fontBorderColor="gray" verbal="Газон"/>
+	  
+	  <polygon type="0x10f01" verbal="Стройка" pattern="stroika"/>
+	  <polygon type="0x10f07" color="#E9C8BD" verbal="Сельхозпостройки"/>
+	  <polygon type="0x10f00" verbal="Поля" pattern="pole"/>
+	  
+  </polygons>
+
+  <polygonsSelected>
+    <polygon fontSize="10" fontBold="0" fontColor="ltgray" fontBorderColor="RealBuildingsColor"/>
+	  <polygon type="0x13" color="dkred" verbal="Здание/искусcтвенное сооружение"/>
+	  <polygon type="0x6c" color="dkred" verbal="Жилое здание"/>
+	  <polygon type="0x6d" color="dkred" verbal="Офисное здание"/>
+	  <polygon type="0x6e" color="dkred" verbal="Общественное здание"/>
+	  <polygon type="0x6f" color="dkred" verbal="Промышленное сооружение"/>
+  </polygonsSelected>
+
+  <polylines>
+    <polyline color="gray" pixels="1pd" fontSize="12" fontBold="1" fontColor="ltgray" fontBorderColor="#000000"/>
+    <polyline type="0x0" pixels="1pd" color="#FAAC18" metres="4" verbal="Дорога"/>
+    <polyline type="0x1" pixels="8pd" color="#C61621" metres="12" verbal="Автомагистраль"/>
+    <polyline type="0x2" pixels="7pd" color="#FE6A00" metres="10" verbal="Шоссе основное"/>
+    <polyline type="0x3" pixels="3pd" color="#FAAC18" metres="6" verbal="Загородная дорога"/>       
+    <polyline type="0x4" pixels="6pd" color="#FE6A00" metres="10" verbal="Городская магистраль"/>
+    <polyline type="0x5" pixels="4pd" color="#FAAC18" metres="8" verbal="Улица крупная"/>
+    <polyline type="0x6" pixels="2pd" color="#585858" metres="6" verbal="Улица малая"/>
+    <polyline type="0x7" pixels="1pd" color="#585858" metres="4" verbal="Дворовой проезд"/>
+    <polyline type="0x8-0x9" pixels="2pd" color="#684d36" metres="6" verbal="Наклонные съезды"/>
+    <polyline type="0xa" pixels="1pd" color="#9e7e5e" metres="3" verbal="Грунтовая дорога"/>
+    <polyline type="0xb" pixels="4pd" color="#FAAC18" metres="8" verbal="Соединительное шоссе"/>
+    <polyline type="0xc" pixels="4pd" color="#FAAC18" metres="8" hideLabel="1" verbal="Круговое движение"/>
+    <polyline type="0x14" pixels="3pd" color="gray" dashColor="RealBuildingsColor" verbal="Железная дорога"/>
+    <polyline type="0x15" pixels="1pd" color="#020356" verbal="Береговая линия"/>
+    <polyline type="0x16" pixels="1pd" dotColor="RealBuildingsColor" verbal="Аллея, тропа"/>
+    <polyline type="0x18" pixels="1pd" color="WaterObjectsColor" edge="0" verbal="Ручей"/>
+    <polyline type="0x19" pixels="1pd" color="green" verbal="Граница часового пояса"/>
+    <polyline type="0x1a-0x1b" pixels="1pd" dotColor="cyan" verbal="Паром"/>
+    <polyline type="0x1c" pixels="1pd" color="red" dotColor="#00C864" verbal=""/>
+    <polyline type="0x1d" pixels="1pd" color="RealBuildingsColor" dotColor="#00C864" verbal=""/>
+    <polyline type="0x1e" pixels="2pd" color="red" dotColor="#00C864" verbal=""/>
+    <polyline type="0x1f" pixels="1pd" color="WaterObjectsColor" edge="0" verbal="Река"/>
+    <polyline type="0x20" pixels="1pd" dotColor="#FEC06C" verbal="Горизонталь вспомогательная"/>
+    <polyline type="0x21" pixels="1pd" color="#FEC06C" verbal=""/>
+    <polyline type="0x22" pixels="2pd" color="#FEC06C" verbal=""/>
+    <polyline type="0x23" pixels="2pd" dotColor="cyan" verbal=""/>
+    <polyline type="0x24" pixels="1pd" color="cyan" verbal=""/>
+    <polyline type="0x25" pixels="2pd" color="cyan" verbal=""/>
+    <polyline type="0x26" pixels="2pd" dotColor="WaterObjectsColor" edge="0" verbal="Пересыхающая река"/>
+    <polyline type="0x27" pixels="8pd" color="#046402" metres="20" verbal="Взлетно-посадочная полоса"/>
+    <polyline type="0x28" pixels="2pd" dotColor="gray" verbal=""/>
+    <polyline type="0x29" pixels="1pd" color="gray" verbal=""/>
+    <polyline type="0x2a" pixels="1pd" verbal="Морская граница"/>
+    <polyline type="0x2b" pixels="1pd" verbal="Опасность для плавания"/>
+    <polyline type="0x3d" pixels="1pd" verbal="Направленный текст малый"/>
+    <polyline type="0x3e" pixels="1pd" verbal="Направленный текст"/>
+    <polyline type="0x3f" pixels="2pd" color="gray" dashColor="RealBuildingsColor" verbal="Трамвайная дорога"/>
+    <polyline type="0x40" pixels="2pd" color="RealBuildingsColor" verbal=""/>
+    <polyline type="0x41" pixels="2pd" color="RealBuildingsColor" verbal=""/>
+    <polyline type="0x42" pixels="1pd" color="gray" verbal=""/>
+    <polyline type="0x43" pixels="1pd" dotColor="RealBuildingsColor" verbal=""/>
+    <polyline type="0x44" pixels="2pd" color="WaterObjectsColor" edge="0" verbal="Река широкая"/>
+    <polyline type="0x45" pixels="1pd" color="dkgray" dotColor="#00C864" verbal="Граница городского района"/>
+    <polyline type="0x46" pixels="1" color="#333333" verbal="Забор"/>
+    <polyline type="0x47" pixels="6pd" color="#E800E8" verbal="Планируемый маршрут"/>
+    <polyline type="0x48" pixels="6pd" dotColor="#222222" verbal="Просека"/>
+    <polyline type="0x49" pixels="1pd" color="#E800E8" verbal="Полоса движения"/>
+
+    <polyline type="0xe" pixels="1pd" dotColor="black" verbal="Велодорожка"/>
+    <polyline type="0x010f13" pixels="3pd" color="gray" dashColor="RealBuildingsColor" verbal="Железная дорога"/>
+  </polylines> 
+
+  <polylinesSelected>
+    <polyline color="ltgray" edge="1" edgeColor="#555555" fontSize="9" fontBold="1"/>
+    <polyline type="0x0" pixels="1pd" color="dkred" metres="4" verbal="Дорога"/>
+    <polyline type="0x1" pixels="8pd" color="dkred" metres="12" verbal="Автомагистраль"/>
+    <polyline type="0x2" pixels="7pd" color="dkred" metres="10" verbal="Шоссе основное"/>
+    <polyline type="0x3" pixels="3pd" color="dkred" metres="6" verbal="Загородная дорога"/>
+    <polyline type="0x4" pixels="6pd" color="dkred" metres="10" verbal="Городская магистраль"/>
+    <polyline type="0x5" pixels="4pd" color="dkred" metres="8" verbal="Улица крупная"/>
+    <polyline type="0x6" pixels="2pd" color="dkred" metres="6" verbal="Улица малая"/>
+    <polyline type="0x7" pixels="1pd" color="dkred" metres="4" verbal="Дворовой проезд"/>
+    <polyline type="0x8-0x9" pixels="2pd" color="dkred" metres="6" verbal="Наклонные съезды"/>
+    <polyline type="0xa" pixels="1pd" color="dkred" metres="4" verbal="Грунтовая дорога"/>
+    <polyline type="0xb" pixels="4pd" color="dkred" metres="8" verbal="Соединительное шоссе"/>
+    <polyline type="0xc" pixels="4pd" color="dkred" metres="8" hideLabel="1" verbal="Круговое движение"/>
+  </polylinesSelected>
+  
+  <pois>
+    <poi picture="" fontSize="8" picPosition="center;above" labelPosition="right;below"/>
+    <poi type="0x0000" picture="attention" verbal="$0x0000"/>
+    <poi type="0x0100-0x1100" picture="" verbal="$0x0100" />
+    <poi type="0x1200-0x1300,0x1d00,0x2f09,0x4200-0x4300,0x4700" picture="0x1200" verbal="$0x1200" />
+    <poi type="0x1400-0x1500,0x1e00-0x1f00,0x2800" picture="" verbal="$0x1400" />
+    <poi type="0x1600-0x1b16" picture="0x1600" verbal="$0x1600" />
+    <poi type="0x1c00-0x1c0b" picture="0x1x00" verbal="$0x1c00" />
+    <poi type="0x2000-0x2700,0x2f02,0x2f07,0x2f0d" picture="0x2000" verbal="$0x2000"/>
+    <poi type="0x2900,0x2f00,0x2f0a,0x2f0c,0x2F10-0x2f15,0x5100,0x640f,0xF603,0xf606-0xf616" picture="0x2900" verbal="$0x2900"/>
+	<poi type="0x2f05" picture="0x2f05" verbal="$0x2f05"/>
+    <poi type="0x2A00-0x2a06,0x2a08,0x2a09,0x2a0b-0x2a12,0x4500,0x4600" picture="0x2a00" verbal="$0x2A00"/>
+	<poi type="0x2A07" picture="0x2a07" verbal="$0x2A07"/>
+	<poi type="0x2A0A" picture="0x2a0a" verbal="$0x2A0A"/>
+    <poi type="0x2b00-0x2b04" picture="0x2b00" verbal="$0x2b00"/>
+    <poi type="0x2c00-0x2c04,0x2c06,0x2c07,0x2c09,0x2c0a,0xf901,0xf301-0xf302" picture="0x2c00" verbal="$0x2c00"/>
+    <poi type="0x2c05,0x6410,0xf501-0xf505" picture="0x2c05" verbal="$0x2c05"/>
+    <poi type="0x2c0b,0x6404" verbal="$0x2c0b"/>
+    <poi type="0x2d00,0x2d01,0x2d03,0x2d04" picture="0x2d00" verbal="$0x2d00"/>
+	<poi type="0x2d02" picture="0x2d02" verbal="$0x2d02"/>
+    <poi type="0x2d05-0x2d0b,0x4000,0x5300,0x2c08" picture="0x2d05" verbal="$0x2d05"/>
+    <poi type="0x2E00-0x2E04,0x2E06-0x2E0b,0x2f0f,0xF701-0xF705,0xF707,0xF708,0xF70B,0xF70C" picture="shop" verbal="$0x2E00"/>
+	<poi type="0x2e05" picture="0x2e05" verbal="$0x2e05"/>
+    <poi type="0x2F01,0x4400,0xf208" picture="0xf208" verbal="$0x2F01"/>
+    <poi type="0x2F03" picture="0x2f03" verbal="$0x2F03"/>
+    <poi type="0x2F04" picture="0x5905" verbal="$0x2F04"/>
+    <poi type="0x2F06" picture="0xf601" verbal="$0x2F06"/>
+    <poi type="0x2f08,0x2f17,0xF002,0xf001" picture="0xf002" verbal="$0x2f08"/>
+    <poi type="0x2F0E" picture="0x2f0e" verbal="$0x2F0E"/>
+    <poi type="0x3000,0x3003-0x3005,0x3007,0x4b00,0xf801,0xf802" picture="0x3000" verbal="$0x3000"/>
+	<poi type="0x3001" picture="0x3001" verbal="$0x3001"/>
+	<poi type="0x3002" picture="0x3002" verbal="$0x3002"/>
+	<poi type="0x3008" picture="0x3008" verbal="$0x3008"/>
+    <poi type="0x4100,0x4800-0x4a00,0x4c00,0x4e00-0x5000,0x5200,0x5400" picture="0x4100" verbal="$0x4100"/>
+    <poi type="0x4D00,0x2f16,0x2f0b" picture="0x2f0b" verbal="$0x4D00"/>
+    <poi type="0x5500" picture="" verbal="$0x5500"/>
+    <poi type="0x5600-0x56ff" picture="0x5905" verbal="$0x5600"/>
+	<poi type="0x5700" picture="0x5700" verbal="$0x5700"/>
+    <poi type="0x5800" picture="0xf202" verbal="$0x5800"/>
+    <poi type="0x5900-0x5905" picture="0x5905" verbal="$0x5900"/>
+    <poi type="0x5a00-0x6100" picture="" verbal="$0x5a00"/>
+    <poi type="0x6200-0x6300" picture="" verbal="$0x6200"/>
+    <poi type="0x6500-0x6513" picture="" verbal="$0x6500"/>
+    <poi type="0x6600-0x6603,0x6605-0x6618,0xf308-0xf30a,0xf30d-0xf406" picture="0x6600" verbal="$0x6600"/>
+	<poi type="0x6604" picture="0x6604" verbal="$0x6604"/>
+    <poi type="0xF003" picture="0xf003" verbal="$0xF003"/>
+    <poi type="0xF004" picture="0xf004" verbal="$0xF004"/>
+    <poi type="0xF005" picture="0xf005" verbal="$0xF005"/>
+    <poi type="0xF006-0xF008" picture="0x2f04" verbal="$0xF006"/>
+    <poi type="0xF009" picture="0xf009" verbal="$0xF009"/>
+    <poi type="0xF00A-0xf00c" picture="0xf00a" verbal="$0xF00A"/>
+    <poi type="0xF101" picture="0xf101" verbal="$0xF101"/>
+    <poi type="0xF102" picture="0xf102" verbal="$0xF102"/>
+    <poi type="0xF103" picture="0xf103" verbal="$0xF103"/>
+    <poi type="0xF104" picture="0xf104" verbal="$0xF104"/>
+    <poi type="0xF105" picture="0xf105" verbal="$0xF105"/>
+    <poi type="0xF106" picture="0xf106" verbal="$0xF106"/>
+    <poi type="0xF201" picture="0xf201" verbal="$0xF201"/>
+    <poi type="0xF202" picture="0xf202" verbal="$0xF202"/>
+    <poi type="0xf203" picture="0xf203" verbal="$0xf203"/>
+    <poi type="0xf204" picture="0xf204" verbal="$0xf204"/>
+    <poi type="0xf205" picture="0xf205" verbal="$0xf205"/>
+	<poi type="0x3006" picture="0xf205" verbal="$0xf205"/>
+    <poi type="0xf206" picture="0xf206" verbal="$0xf206"/>
+    <poi type="0xf207" picture="0xf207" verbal="$0xf207"/>
+    <poi type="0xf209" picture="0xf209" verbal="$0xf209"/>
+    <poi type="0xf20a" picture="0xf20a" verbal="$0xf20a"/>
+    <poi type="0xf20b" picture="0xf20b" verbal="$0xf20b"/>
+    <poi type="0xf20c" picture="0xf20c" verbal="$0xf20c"/>
+    <poi type="0xF601" picture="0xf601" verbal="$0xF601"/>
+    <poi type="0xF602" picture="0xf602" verbal="$0xF602"/>
+    <poi type="0xF604" picture="0xf604" verbal="$0xF604"/>
+    <poi type="0xF605" picture="0xf605" verbal="$0xF605"/>
+    <poi type="0xF706" picture="0xf706" verbal="$0xF706"/>
+    <poi type="0xF709" picture="0xf709" verbal="$0xF709"/>
+    <poi type="0xF70A" picture="0xf70a" verbal="$0xF70A"/>
+  </pois>
+
+  <speedCams>
+    <speedCam picPosition="center;above"/>
+    <speedCam type="1" picture="001"/>
+    <speedCam type="2" picture="002"/>
+    <speedCam type="3" picture="003"/>
+    <speedCam type="4" picture="004"/>
+    <speedCam type="5" picture="005"/>
+    <speedCam type="100" picture="100"/>
+    <speedCam type="101" picture="101"/>
+    <speedCam type="102" picture="102"/>
+    <speedCam type="103" picture="103"/>
+    <speedCam type="104" picture="104"/>
+    <speedCam type="105" picture="105"/>
+    <speedCam type="106" picture="106"/>
+  </speedCams>
+  
+</map>
